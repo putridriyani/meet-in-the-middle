@@ -25,24 +25,19 @@
    ```bash
    git clone https://github.com/your-username/meet-in-the-middle.git
    cd meet-in-the-middle
-Install dependencies:
+   
+2. Install dependencies:
+   ```bash
+   npm install
 
-bash
-Copy
-Edit
-npm install
-Buat file .env.local di root project dan isi dengan API key kamu:
-
-env
-Copy
-Edit
-OPENCAGE_KEY=your_opencage_api_key
-OPENTRIPMAP_KEY=your_opentripmap_api_key
-Jalankan project secara lokal:
-
-bash
-Copy
-Edit
-npm run dev
-Buka browser dan akses: http://localhost:3000
+3. Buat file .env.local di root project dan isi dengan API key kamu:
+   ```bash
+   OPENCAGE_KEY=your_opencage_api_key
+   OPENTRIPMAP_KEY=your_opentripmap_api_key
+   
+5. Jalankan project secara lokal:
+   ```bash
+   npm run dev
+   
+6. Buka browser dan akses: http://localhost:3000
 
