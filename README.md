@@ -1,6 +1,7 @@
 # Meet In The Middle 🗺️
 
 **Meet In The Middle** adalah aplikasi web yang membantu kamu dan teman-temanmu menemukan titik temu terbaik berdasarkan beberapa lokasi yang kalian input. Cocok digunakan untuk merencanakan pertemuan di tempat yang adil dan strategis bagi semua pihak.
+![image](https://github.com/user-attachments/assets/42db5070-a168-4992-bfe2-d7b63d28d3aa)
 
 ## ✨ Fitur Utama
 
