@@ -1,9 +1,13 @@
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f0e2d3;
+  --foreground: #281b0d;
 }
 
 @theme inline {
@@ -15,8 +19,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #281b0d;
+    --foreground: #f0e2d3;
   }
 }
 
@@ -25,3 +29,38 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+/* Tambahan global styles */
+body {
+  @apply bg-white text-gray-900 leading-relaxed;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+/* Tombol standar */
+.btn {
+  @apply inline-block rounded px-5 py-2 font-semibold transition duration-200;
+}
+
+/* Variasi warna tombol */
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+.btn-large {
+  @apply text-lg px-6 py-3;
+}
+
+/* Input style global */
+.input {
+  @apply w-full border border-gray-300 rounded px-3 py-2 mb-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+

@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
             name: detailRes.data.name || "No Name",
             url: detailRes.data.otm || null,
             lat: place.point.lat,
-            lng: place.point.lon, // Kalau ini 'lon' di backend, harus dipastikan di frontend juga menggunakan 'lng'
+            lng: place.point.lon, 
           };
           
         } catch {

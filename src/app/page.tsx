@@ -73,21 +73,21 @@ export default function Home() {
           placeholder={`Alamat atau tempat ${i + 1}`}
           value={input.address}
           onChange={(e) => handleChange(i, e.target.value)}
-          className="mb-2 p-2 w-full border rounded"
+          className="input"
         />
       ))}
 
       <div className="flex gap-4 mt-4">
         <button
           onClick={handleAdd}
-          className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+          className="btn btn-secondary"
           disabled={inputs.length >= 10}
         >
           Tambah Lokasi
         </button>
         <button
           onClick={handleSubmit}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          className="btn btn-primary"
           disabled={loading}
         >
           {loading ? "Memproses..." : "Cari Rekomendasi"}
